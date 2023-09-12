@@ -1,0 +1,13 @@
+1) initialize project :- react-native init AmazonClone --template react-native-template-typescript
+2) error on 1st run :- error: unable to attach DB: error: accessing build database (react native) 
+    Solution :- Run below commands:-
+        rm -rf ~/Library/Developer/Xcode/DerivedData/
+        cd ios
+        pod deintegrate
+        pod update
+        cd..
+        yarn run ios or npm run ios
+    https://stackoverflow.com/questions/73301738/xcode-13-4-1-error-unable-to-attach-db-error-accessing-build-database-react
+3) npm add react-native-vector-icons
+4) add list in ios and command in android
+5) Test vector icons
